@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer'
 import Main from './components/Main'
 import Card from './components/Card'
@@ -20,25 +20,23 @@ class App extends React.Component {
       let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
       [array[i], array[j]] = [array[j], array[i]]; // swap elements
     }
+    return array
   }
 
   //Game logic on click
   onClickCard = (id) => {
     //grab id to find which card is clicked
-    let index = this.state.pokemon.findIndex(el => el.id === id)
-    //if !clicked
+    let pokemon = this.state.pokemon
+    let index = pokemon.findIndex(el => el.id === id)
+    //if not clicked
     if(!this.state.pokemon[index].clicked){
-      let pokemon = this.state.pokemon
       let message = this.state.message
 
       //change clicked to true
       pokemon[index].clicked = true
 
       //Shuffle
-      for (let i = pokemon.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
-        [pokemon[i], pokemon[j]] = [pokemon[j], pokemon[i]]; // swap elements
-      }       
+      this.shuffle(pokemon)
 
       // score + 1
       let score = this.state.score + 1
@@ -58,6 +56,7 @@ class App extends React.Component {
         message = "You win!"
       }
 
+      // Set state
       this.setState({
         pokemon: pokemon,
         score: score,
@@ -68,11 +67,10 @@ class App extends React.Component {
      //if clicked
      } else {
        // change all pokemon state to be clicked
-      let pokemon = this.state.pokemon
-      
       pokemon.forEach(el => {
         el.clicked = true
       })
+
       // update middle message
       // set NewGame to true
       // set state
@@ -95,10 +93,7 @@ class App extends React.Component {
     })
     
     //shuffle
-    for (let i = pokemon.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
-      [pokemon[i], pokemon[j]] = [pokemon[j], pokemon[i]]; // swap elements
-    }       
+    this.shuffle(pokemon)
 
     //set state
     this.setState({

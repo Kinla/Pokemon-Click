@@ -17,6 +17,7 @@ const Card = (props) => {
     height: "auto",
     maxHeight: "100%",
     objectFit: "scale-down",
+    margin: "auto"
   }
 
   return (
