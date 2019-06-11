@@ -25,8 +25,8 @@ class App extends React.Component {
 
   //Game logic on click
   onClickCard = (id) => {
-    //grab id to find which card is clicked
     let pokemon = this.state.pokemon
+    //grab id to find which card is clicked
     let index = pokemon.findIndex(el => el.id === id)
     //if not clicked
     if(!this.state.pokemon[index].clicked){

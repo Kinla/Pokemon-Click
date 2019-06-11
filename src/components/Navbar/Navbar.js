@@ -19,7 +19,7 @@ const Navbar = (props) => {
             <MDBNavbarBrand className="p-2 flex-fill text-white text-center mx-0 ubuntu">{props.message}       
             {newGame && <MDBBtn color="yellow" size="sm" className="font-weight-bold ml-5 ubuntu" style={{fontSize: "1rem"}} onClick={() => props.onClick()}>New Game</MDBBtn>}  
             </MDBNavbarBrand>
-            <MDBNavbarBrand className="p-2 flex-fill text-white text-right mx-0 ubuntu"><span>Score: {props.score}</span><span className="mx-3">|</span><span>Top Score: {props.highScore}</span></MDBNavbarBrand>
+            <MDBNavbarBrand className="p-2 flex-fill text-white text-right mx-0 ubuntu"><span>Score: {props.score}</span><span className="mx-3">|</span><span>High Score: {props.highScore}</span></MDBNavbarBrand>
           </MDBNavbar>
         </header>
       </Router>
