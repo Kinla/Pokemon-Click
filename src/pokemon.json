@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "Bulbasaur",
+      "image":
+        "https://img.pokemondb.net/artwork/large/bulbasaur.jpg",
+      "clicked": false  
+    },
+    {
+      "id": 2,
+      "name": "Charmander",
+      "image":
+        "https://img.pokemondb.net/artwork/charmander.jpg",
+      "clicked": false    
+    },
+    {
+      "id": 3,
+      "name": "Squirtle",
+      "image":
+        "https://img.pokemondb.net/artwork/squirtle.jpg",
+      "clicked": false  
+    },
+    {
+      "id": 4,
+      "name": "Pikachu",
+      "image":
+        "https://img.pokemondb.net/artwork/pikachu.jpg",
+      "clicked": false 
+    },
+    {
+      "id": 5,
+      "name": "Jiggly Puff",
+      "image":
+        "https://img.pokemondb.net/artwork/jigglypuff.jpg",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "name": "Magikarp",
+      "image":
+        "https://img.pokemondb.net/artwork/magikarp.jpg",
+      "clicked": false  
+    },
+    {
+      "id": 7,
+      "name": "Snorlax",
+      "image":
+        "https://img.pokemondb.net/artwork/snorlax.jpg",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "name": "Eevee",
+      "image":
+        "https://img.pokemondb.net/artwork/eevee.jpg",
+      "clicked": false
+    },
+    {
+      "id": 9,
+      "name": "Voltorb",
+      "image":
+        "https://img.pokemondb.net/artwork/voltorb.jpg",
+      "clicked": false
+    },
+    {
+      "id": 10,
+      "name": "Gastly",
+      "image":
+        "https://img.pokemondb.net/artwork/gastly.jpg",
+      "clicked": false  
+    },
+    {
+      "id": 11,
+      "name": "Mew",
+      "image":
+        "https://img.pokemondb.net/artwork/mew.jpg",
+      "clicked": false  
+    },
+    {
+      "id": 12,
+      "name": "Poliwag",
+      "image":
+        "https://img.pokemondb.net/artwork/poliwag.jpg",
+      "clicked": false    
+    }  
+  ]
+  
