@@ -15,9 +15,15 @@ This is a pokemon themed a memory game that is built with React.
 
 4. The "New Game" function is available should the user makes an incorrect guess or they win the game by catching all pokemons.
 
+### Demo
+![Demo](https://github.com/Kinla/Pokemon-Click/blob/master/pokemonClick.gif)
+
 ## Technologies
   * HTML
   * CSS
   * MBD React
   * JavaScript
   * React.js
+  
+## License
+MIT
